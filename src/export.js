@@ -84,7 +84,7 @@ export function exportAction (context) {
   else {
 
     //allow xml to be written to the folder
-    var fileTypes = NSArray.arrayWithObjects("json", null);
+    var fileTypes = NSArray.arrayWithArray(["json"]); //create select folder window
 
     //create select folder window
     var panel = NSOpenPanel.openPanel();
